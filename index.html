@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>House Price Prediction Website</title>
+    <!-- add favicon -->
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <!-- add css styling -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+  <body>
+    <section>
+      <div class="box">
+        <div class="form">
+          <div class="top">
+            <h3><span>House Price Prediction</span></h3>
+            <p>Please enter the required values to predict the price</p>
+          </div>
+          <form method="post" class="form-container">
+            <div class="info">
+              <div class="form-group">
+                <label for="HouseStyle">House Style:</label>
+                <input type="text" name="HouseStyle" id="HouseStyle" />
+              </div>
+              <div class="form-group">
+                <label for="MSZoning">Zone Classification:</label>
+                <select name="MSZoning" id="MSZoning">
+                  <option value="A">A - Agricultural</option>
+                  <option value="C">C - Commercial</option>
+                  <option value="FV">FV - Floating Village Residential</option>
+                  <option value="I">I - Industrial</option>
+                  <option value="RH">RH - Residential High Density</option>
+                  <option value="RL">RL - Residential Low Density</option>
+                  <option value="RP">RP - Residential Medium Density</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="LotArea">Lot Area:</label>
+                <input type="number" name="LotArea" id="LotArea" />
+              </div>
+              <div class="form-group">
+                <label for="LotConfig">Lot Configuration:</label>
+                <select name="LotConfig" id="LotConfig">
+                  <option value="Inside">Inside Lot</option>
+                  <option value="Corner">Corner Lot</option>
+                  <option value="CulDSac">Cul-de-Sac</option>
+                  <option value="FR2">Frontage 2</option>
+                  <option value="FR3">Frontage 3</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="BldgType">Building Configuration:</label>
+                <select name="BldgType" id="BldgType">
+                  <option value="1Fam">1Fam - Single-family Detached</option>
+                  <option value="2Fam">2Fam - Two-family Dwelling</option>
+                  <option value="Duplex">Duplex</option>
+                  <option value="TwnhsE">TwnhsE - End Unit Townhouse</option>
+                  <option value="TwnhsI">TwnhsI - Inside Unit Townhouse</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="OverallCondition">Overall Condition:</label>
+                <input type="text" name="OverallCondition" id="OverallCondition" />
+              </div>
+              <div class="form-group">
+                <label for="ConstructionYear">Construction Year:</label>
+                <input type="number" name="ConstructionYear" id="ConstructionYear" />
+              </div>
+              <div class="form-group">
+                <label for="RemodelYear">Remodel Year:</label>
+                <input type="number" name="RemodelYear" id="RemodelYear" />
+              </div>
+              <div class="form-group">
+                <label for="ExteriorMaterial">Exterior Material:</label>
+                <select name="ExteriorMaterial" id="ExteriorMaterial">
+                  <option value="Vinyl">Vinyl Siding</option>
+                  <option value="Metal">Metal Siding</option>
+                  <option value="Cement">Cement Board</option>
+                  <option value="Brick">Brick Veneer</option>
+                  <option value="Stone">Stone</option>
+                  <option value="Wood">Wood Siding</option>
+                  <option value="Stucco">Stucco</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="BasementFinishArea2">Basement Finish Area 2:</label>
+                <input type="number" name="BasementFinishArea2" id="BasementFinishArea2" />
+              </div>
+              <div class="form-group">
+                <label for="BasementTotalArea">Basement Total Area:</label>
+                <input type="number" name="BasementTotalArea" id="BasementTotalArea" />
+              </div>
+            </div>
+            <div class="action">
+              <input type="submit" name="submit" class="btn" value="Predict" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

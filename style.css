@@ -1,0 +1,126 @@
+/* Global reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-image: url('img/background.jpg'); /* Đường dẫn đến ảnh của bạn */
+  background-size: cover; /* Phủ đầy màn hình */
+  background-position: center; /* Căn giữa ảnh */
+  background-attachment: fixed; /* Ảnh cố định khi cuộn */
+  color: #333;
+  font-size: 16px;
+  line-height: 1.6;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+/* Box container */
+.box {
+  width: 100%;
+  max-width: 800px; /* Giới hạn chiều rộng để tập trung nội dung */
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Box header */
+.box .top {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.box .top h3 {
+  font-size: 2em;
+  color: #0075b9;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.box .top p {
+  font-size: 1em;
+  color: #555;
+}
+
+/* Section Headers */
+.section-header {
+  margin: 20px 0;
+}
+
+.section-header h4 {
+  font-size: 1.3em;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Form input fields */
+.info {
+  display: grid; /* Sử dụng grid layout */
+  grid-template-columns: 1fr 1fr; /* Hai cột */
+  gap: 20px; /* Khoảng cách giữa các field */
+  margin-bottom: 20px;
+}
+
+.info label {
+  font-size: 1em;
+  color: #333;
+  margin-bottom: 5px;
+  font-weight: 600;
+  display: block;
+}
+
+.info input,
+.info select {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 8px;
+  background-color: #f7f7f7;
+  border: 1px solid #ccc;
+  font-size: 1em;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+.info input:focus,
+.info select:focus {
+  border-color: #0075b9;
+  background-color: #eaf4ff;
+  box-shadow: 0 0 5px rgba(0, 117, 185, 0.3);
+}
+
+/* Một cột trên thiết bị nhỏ */
+@media (max-width: 768px) {
+  .info {
+    grid-template-columns: 1fr; /* Chuyển sang 1 cột */
+  }
+}
+
+/* Submit Button */
+.action {
+  text-align: right;
+  margin-top: 20px;
+}
+
+.action input[type="submit"] {
+  padding: 12px 30px;
+  border-radius: 8px;
+  background-color: #0075b9;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.action input[type="submit"]:hover {
+  background-color: #005f8b;
+}
